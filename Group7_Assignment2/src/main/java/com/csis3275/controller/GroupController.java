@@ -8,9 +8,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.csis3275.model.GroupModel;<<<<<<<HEAD
-import com.csis3275.model.Model_eri_77;=======
-import com.csis3275.model.Model_ika_09;>>>>>>>model_ika_09
+import com.csis3275.model.GroupModel;
+import com.csis3275.model.Model_eri_77;
+import com.csis3275.model.Model_ika_09;
 
 /**
  * GroupController is a Spring MVC Controller that handles HTTP requests for the
@@ -44,8 +44,9 @@ public class GroupController {
 			model.addAttribute("member", std);
 			break;
 		}
+		return "bio/" + imageName;
 	}
-
+	
 	/**
 	 * Handles requests for individual member bios based on the image name.
 	 * Populates the model with member-specific data.
