@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.csis3275","l":"Group7Assignment2Application"},{"p":"com.csis3275.controller","l":"GroupController"},{"p":"com.csis3275.model","l":"GroupModel"},{"p":"com.csis3275.model","l":"Model_eri_77"}];updateSearchResults();
