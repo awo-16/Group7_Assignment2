@@ -9,10 +9,11 @@ import com.csis3275.model.Model_awo_16;
 @Controller
 public class controller_awo_16 {
     
-    @GetMapping("/Augusta.html")
+    @GetMapping("/bio/Augusta.html")
     public String about(Model model) {
     	Model_awo_16 member = new Model_awo_16();
         model.addAttribute("member", member);
-        return "augusta";
+        System.out.println("Controller method invoked!");
+        return "bio/Augusta";
     }
 }

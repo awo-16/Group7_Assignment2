@@ -6,8 +6,12 @@
 <title>About Augusta</title>
 </head>
 <body>
-<p th:text="${@member.description}"></p>
-<br>
-<img h:src="@{'/images/' + ${imageName} +'.png'}" alt="Augusta's photograph">
+<div class="container">
+        <div class="container text-center mt-5">
+        <img th:src="@{'/images/' + ${member.imageName} + '.png'}" alt="Augusta's photograph" class="img-fluid mb-4">
+        <div class="bio-text">
+            <p th:text="${member.description}"></p>
+        </div>
+    </div>
 </body>
 </html>
