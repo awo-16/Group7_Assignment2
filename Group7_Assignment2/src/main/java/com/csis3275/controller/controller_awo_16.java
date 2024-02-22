@@ -13,6 +13,6 @@ public class controller_awo_16 {
     public String about(Model model) {
     	Model_awo_16 member = new Model_awo_16();
         model.addAttribute("member", member);
-        return "Augusta.html";
+        return "augusta";
     }
 }
