@@ -3,10 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <title>About Elson</title>
+<style>
+.content-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	gap: 50px;
+	margin-top: 50px;
+}
+
+.text-container {
+	max-width: 300px; /* Adjust max-width as needed */
+}
+</style>
 </head>
 <body>
-
-
-
+	<div class="content-container">
+		<div class="text-container">
+			<p th:text="${groupMember.description}"></p>
+		</div>
+		<div>
+			<img th:src="@{'/images/' + ${groupMember.imageName} +'.png'}"
+				alt="Elson Ricafranca" />
+		</div>
+	</div>
 </body>
 </html>

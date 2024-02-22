@@ -29,8 +29,8 @@
 
 	<div class="image-container">
 		<div th:each="imageName : ${groupProfile.imageNames}">
-			<a th:href="@{'/bio/' + imageName}"> <img
-				th:src="@{'/images/' + ${imageName}}" alt="Image" />
+			<a th:href="@{'/bio/' + ${imageName}}"> <img
+				th:src="@{'/images/' + ${imageName}+'.png'}" alt="Image" />
 			</a>
 		</div>
 	</div>
